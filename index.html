@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GameHub (Frontend Only)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>GameHub</h1></header>
+
+  <section id="auth">
+    <h2>Profile</h2>
+    <input id="username" placeholder="username">
+    <button id="loginBtn">Set profile</button>
+    <span id="tokenStatus"></span>
+  </section>
+
+  <section id="economy">
+    <h2>Wallet</h2>
+    <div>Balance: <span id="balance">0</span></div>
+    <button id="grantBtn">Grant 100</button>
+
+    <h3>Items</h3>
+    <ul id="items"></ul>
+    <h3>Inventory</h3>
+    <ul id="inventory"></ul>
+    <h3>Receipts</h3>
+    <ul id="receipts"></ul>
+  </section>
+
+  <section id="multiplayer">
+    <h2>Chat (open multiple tabs to simulate players)</h2>
+    <input id="roomId" placeholder="room-1" />
+    <button id="joinRoom">Join room</button>
+    <div id="chat">
+      <input id="chatInput" placeholder="Say something">
+      <button id="sendChat">Send</button>
+      <ul id="chatLog"></ul>
+    </div>
+  </section>
+
+  <section id="moderation">
+    <h2>Report content</h2>
+    <input id="reportType" placeholder="chat|player|asset">
+    <input id="targetId" placeholder="target id">
+    <input id="reason" placeholder="reason">
+    <button id="sendReport">Report</button>
+    <ul id="reportList"></ul>
+  </section>
+
+  <footer>
+    <small>Frontend-only demo. Data stored in your browser.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
