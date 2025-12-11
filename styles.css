@@ -1,0 +1,14 @@
+body { font-family: system-ui, Arial; margin: 0; background: #0f1115; color: #eaeef3; }
+header { background: #151922; padding: 12px 20px; border-bottom: 1px solid #232838; }
+footer { padding: 12px 20px; border-top: 1px solid #232838; color: #9aa3b2; }
+section { padding: 16px 20px; border-bottom: 1px solid #232838; }
+h2, h3 { margin: 8px 0; }
+input, button { margin: 4px; padding: 8px; border-radius: 6px; border: 1px solid #2a3246; background: #12151b; color: #eaeef3; }
+button { background: #2b6ceb; border: none; cursor: pointer; }
+button:hover { filter: brightness(1.1); }
+ul { list-style: none; padding: 0; }
+#chat { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; }
+#chat input { grid-column: 1; }
+#chat button { grid-column: 2; }
+#chatLog { grid-column: 1 / span 2; max-height: 240px; overflow-y: auto; background: #12151b; border: 1px solid #2a3246; padding: 8px; border-radius: 6px; }
+.badge { display: inline-block; background: #1f2636; border: 1px solid #2a3246; padding: 2px 6px; border-radius: 6px; margin-left: 6px; color: #9aa3b2; }
